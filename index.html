@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Zadanie 1 - Tabela</title>
+        
+    </head>
+    <body>
+        <table id="table">
+            <caption>Cars</caption>
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Marka</th>
+                    <th onclick="sortTable(1)">Model</th>
+                    <th onclick="sortTable(2)">Silnik [pojemność]</th>
+                    <th onclick="sortTable(3)">Rodzaj paliwa</th>
+                    <th onclick="sortTable(4)">Moc</th>
+                    <th onclick="sortTable(5)">0-100km/h [s]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bmw</td>
+                    <td>316i</td>
+                    <td>R4 1597cm3</td>
+                    <td>benzyna</td>
+                    <td>122km</td>
+                    <td>10,8s</td>
+                </tr>
+                <tr>
+                    <td>Bmw</td>
+                    <td>320i</td>
+                    <td>R4 1995cm3</td>
+                    <td>benzyna</td>
+                    <td>170km</td>
+                    <td>8,2s</td>
+                </tr>
+                <tr>
+                    <td>Bmw</td>
+                    <td>325i</td>
+                    <td>R6 2497cm3</td>
+                    <td>benzyna</td>
+                    <td>218km</td>
+                    <td>6,8s</td>
+                </tr>
+                <tr>
+                    <td>Bmw</td>
+                    <td>335i</td>
+                    <td>R6 2979cm3</td>
+                    <td>benzyna</td>
+                    <td>306km</td>
+                    <td>5,6s</td>
+                </tr>
+                <tr>
+                    <td>Bmw</td>
+                    <td>M3</td>
+                    <td>V8 3999cm3</td>
+                    <td>benzyna</td>
+                    <td>420km</td>
+                    <td>4,8s</td>
+                </tr>
+            </tbody>
+        </table>
+        <tfoot>
+            <br><h3>Marka: <input type="text" name= "marka" id="marka"/></br>
+            <h3>Model: <input type="text" name= "model" id="model"/></br>
+            <h3>Silnik: <input type="text" name= "silnik" id="silnik"/></br>
+            <h3>Rodzaj paliwa: <input type="text" name= "paliwo" id="paliwo"/></br>
+            <h3>Moc: <input type="text" name= "moc" id="moc"/></br>
+            <h3>0-100km: <input type="text" name= "przyspieszenie" id="przyspieszenie"/></br>
+            <button type="button" id="updateButton" class="button" onclick="addRow()">Dodaj</button>
+        </tfoot>
+        <script src="sort.js"></script>
+    </body>
+</html>
